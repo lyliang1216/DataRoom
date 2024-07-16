@@ -1,0 +1,277 @@
+// 右侧面板公共样式
+.dataroom-panel-wrapper{
+  width:100%;
+  height:100% !important;
+  background-color: #ffffff;
+  color: #7A7A7A;
+  .title{
+    color: #0a0a0a;
+    font-size: 14px;
+    padding-left: 32px;
+  }
+  ::v-deep .el-form-item__label{
+    font-size: 12px;
+  }
+  .label-icon{
+    margin-right: 6px;
+  }
+  .setting-tabs{
+    height:100%;
+    ::v-deep .el-tabs__content{
+      height:calc(100% - 45px);
+      //padding: 8px;
+    }
+   ::v-deep .el-tab-pane{
+     height:100%;
+   }
+    ::v-deep .el-tabs__nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    ::v-deep .el-tabs__active-bar{
+      display: none;
+    }
+    ::v-deep .el-tabs__item{
+      flex: 1;
+      text-align: center;
+      padding: 0;
+      background-color: #ffffff;
+      color: #a3a3a3;
+      font-size:12px;
+      &:hover{
+        background-color: #EBEBEB;
+      }
+    }
+    ::v-deep .el-tabs__item.is-active{
+      background-color: #F7F7F7;
+      color: #1a1a1a;
+    }
+  }
+  .dataroom-style-wrapper{
+    height:100%;
+    .setting-body{
+      //overflow: auto;
+      overflow: scroll;
+      height:calc(100% - 20px);
+      .dataroom-base-set-wrapper{
+        border-bottom: 1px solid #E6E6E6;
+
+      }
+      // 设置面板表单项的公共样式
+      .form-item-box{
+        text-align: right;
+      }
+      //
+      .tabs-set-box{
+        padding-top:20px;
+        padding-right: 24px;
+        box-sizing: border-box;
+        border: none!important;
+        //height:500px;
+        ::v-deep .el-tabs__nav{
+          display: unset!important;
+        }
+        ::v-deep .el-tabs__header{
+          width: 36px;
+          height: 500px;
+        }
+        ::v-deep .el-tabs--left{
+          height: 100% !important;
+        }
+        ::v-deep .el-tabs__content{
+          height: 100%;
+        }
+        ::v-deep .el-tabs__nav-wrap.is-left::after{
+          display: none;
+        }
+        ::v-deep .el-tabs__item{
+          padding-left:0!important;
+          padding-top: 16px;
+          height: 70px;
+        }
+        .label-box{
+          writing-mode: vertical-rl;
+        }
+      }
+      // 图形
+      .dataroom-graph-wrapper{
+        font-size: 12px;
+        .label-box{
+          writing-mode: unset;
+        }
+        .radio{
+        }
+        ::v-deep .el-input-number {
+          width: 100%!important;
+        }
+        ::v-deep .el-input__inner{
+          padding-right: 35px;
+        }
+        .zhuzibiaoqian-radio{
+          ::v-deep .el-radio-button__inner{
+            padding: 10px 10px!important;
+          }
+        }
+        .biaoqian-radio-group{
+          ::v-deep .el-radio-button__inner{
+            padding: 7px 11px!important;
+          }
+        }
+      }
+      // 坐标轴
+      .dataroom-position-wrapper{
+        font-size: 12px;
+        ::v-deep .el-switch__label *{
+          font-size: 12px!important;
+        }
+        ::v-deep .el-tabs__header{
+          width: 100%!important;
+          height: unset!important;
+        }
+        ::v-deep .el-tabs__item{
+          background-color: transparent!important;
+          padding: 0 20px!important;
+          height: 30px!important;
+        }
+        ::v-deep .el-tabs__nav{
+          padding-bottom: 10px;
+          width: 140px!important;
+          left: 50%;
+          transform: translateX(-50%) !important;
+        }
+        ::v-deep .el-tabs__nav-wrap::after{
+          width: 140px!important;
+          left: 50%;
+          transform: translateX(-50%) !important;
+        }
+        ::v-deep .el-tabs__active-bar{
+          display: unset!important;
+          background-color: #1a1a1a;
+        }
+        .dataroom-axis-wrapper{
+          ::v-deep .el-input-number--mini{
+            width: 100%!important;
+          }
+          //.wenbenyangshiyanse{
+          //  ::v-deep .el-color-picker__trigger{
+          //    width: 65px!important;
+          //  }
+          //}
+          ::v-deep .el-radio-group{
+            display: flex;
+          }
+        }
+      }
+      // 图例
+      .dataroom-legend-wrapper{
+        font-size: 12px;
+        ::v-deep .el-input-number--mini{
+          width: 100%!important;
+        }
+        .align-box{
+          display: flex;
+          flex-flow: wrap;
+          .align-item{
+            width: 26px;
+            height: 26px;
+            border-radius: 4px;
+            background-color: #EDEDED;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px;
+            img{
+              width: 60%;
+              height: 60%;
+            }
+          }
+        }
+      }
+    }
+    // 公共样式
+    .set-desc{
+      font-size: 12px;
+      text-align: left;
+    }
+    .color-desc{
+      text-align: center;
+    }
+    .form-item-col{
+      display: flex;
+      flex-direction: column;
+    }
+    ::v-deep .el-form-item{
+      margin-bottom: 6px!important;
+    }
+    // 输入框type=number的样式修改
+    .number-input-box{
+      ::v-deep .el-input__inner{
+        text-align: center!important;
+        padding-right: 0px!important;
+        padding: 0!important;
+      }
+    }
+    .number-input-half{
+      ::v-deep .el-input__inner {
+        padding-right: 35px!important;
+        padding-left: 0!important;
+      }
+    }
+  }
+  /*滚动条样式*/
+  ::v-deep ::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 4px;
+    height: 4px;
+  }
+  ::v-deep ::-webkit-scrollbar-thumb {
+    background: #E6E6E6 !important;
+    border-radius: 10px;
+  }
+}
+// 普通组件的样式配置面板样式
+.props-box{
+  padding: 10px;
+  padding-left: 0;
+  box-sizing: border-box;
+  .props-box-contain{
+    padding-left: 10px;
+  }
+  .tabs-set-box{
+    padding-top:20px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    border: none!important;
+    //height:500px;
+    ::v-deep .el-tabs__nav{
+      display: unset!important;
+    }
+    ::v-deep .el-tabs__header{
+      width: 36px;
+      height: 500px;
+    }
+    ::v-deep .el-tabs--left{
+      height: 100% !important;
+    }
+    ::v-deep .el-tabs__content{
+      height: 100%;
+    }
+    ::v-deep .el-tabs__nav-wrap.is-left::after{
+      display: none;
+    }
+    ::v-deep .el-tabs__item{
+      padding: 0!important;
+      padding-top: 0 !important;
+      height: 70px;
+      writing-mode: vertical-rl;
+    }
+    .label-box{
+      writing-mode: vertical-rl;
+    }
+  }
+
+}
+::v-deep .el-input-number--mini{
+  width: 100% !important;
+}
